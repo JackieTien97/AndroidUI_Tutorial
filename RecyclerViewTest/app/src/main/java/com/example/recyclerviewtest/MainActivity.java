@@ -2,7 +2,6 @@ package com.example.recyclerviewtest;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 
@@ -27,9 +26,23 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initFruits() {
-        for (int i = 0; i < 20; i++) {
-            Fruit fruit = new Fruit(getRandomLengthName("Apple"), R.drawable.apple);
-            fruitList.add(fruit);
+        for (int i = 0; i < 2; i++) {
+            Fruit apple = new Fruit(getRandomLengthName("Apple"), R.drawable.apple);
+            fruitList.add(apple);
+            Fruit banana = new Fruit(getRandomLengthName("Banana"), R.drawable.banana);
+            fruitList.add(banana);
+            Fruit orange = new Fruit(getRandomLengthName("Orange"), R.drawable.orange);
+            fruitList.add(orange);
+            Fruit pear = new Fruit(getRandomLengthName("Pear"), R.drawable.pear);
+            fruitList.add(pear);
+            Fruit grape = new Fruit(getRandomLengthName("Grape"), R.drawable.grape);
+            fruitList.add(grape);
+            Fruit pineapple = new Fruit(getRandomLengthName("pineapple"), R.drawable.pineapple);
+            fruitList.add(pineapple);
+            Fruit cherry = new Fruit(getRandomLengthName("Cherry"), R.drawable.cherry);
+            fruitList.add(cherry);
+            Fruit mango = new Fruit(getRandomLengthName("Mango"), R.drawable.mango);
+            fruitList.add(mango);
         }
     }
 
