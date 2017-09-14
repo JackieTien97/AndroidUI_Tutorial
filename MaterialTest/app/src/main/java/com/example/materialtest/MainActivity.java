@@ -70,17 +70,23 @@ public class MainActivity extends AppCompatActivity {
         fat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar snackbar = Snackbar.make(view, "Data deleted", Snackbar.LENGTH_SHORT).setAction("Undo", new View.OnClickListener() {
+//                Snackbar snackbar = Snackbar.make(view, "Data deleted", Snackbar.LENGTH_SHORT).setAction("Undo", new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View view) {
+//                        Toast.makeText(MainActivity.this, "Data restored", Toast.LENGTH_SHORT).show();
+//                    }
+//                }).setActionTextColor(Color.GREEN);
+//                View mView = snackbar.getView();
+//                mView.setBackgroundColor(Color.LTGRAY);
+//                TextView textView = mView.findViewById(android.support.design.R.id.snackbar_text);
+//                textView.setTextColor(Color.RED);
+//                snackbar.show();
+                Snackbar.make(view, "Data deleted", Snackbar.LENGTH_SHORT).setAction("Undo", new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         Toast.makeText(MainActivity.this, "Data restored", Toast.LENGTH_SHORT).show();
                     }
-                }).setActionTextColor(Color.GREEN);
-                View mView = snackbar.getView();
-                mView.setBackgroundColor(Color.LTGRAY);
-                TextView textView = mView.findViewById(android.support.design.R.id.snackbar_text);
-                textView.setTextColor(Color.RED);
-                snackbar.show();
+                }).show();
             }
         });
 
