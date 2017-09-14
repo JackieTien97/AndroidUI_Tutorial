@@ -64,12 +64,12 @@
     <android.support.design.widget.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
         app:backgroundTint="#269b82"
         app:rippleColor="#33728dff"
         app:elevation="6dp"
         app:pressedTranslationZ="12dp"
         app:layout_anchor="@id/appBar"
+        app:layout_anchorGravity="bottom|end"
         android:src="@drawable/ic_comment" />
 </android.support.design.widget.CoordinatorLayout>
